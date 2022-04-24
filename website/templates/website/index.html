@@ -59,7 +59,7 @@
 			<div class="text-center">
 				<div class="author-img" style="background-image: url({% static 'website/images/psd.png' %});"></div>
 				<h1 id="colorlib-logo"><a href="index.html">Papis Sahine</a></h1>
-				<span class="position"><a href="#">Software Engineer</a> in Mauritania</span>
+				<span class="position"><a href="#">Software Engineer</a></span>
 			</div>
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
@@ -69,8 +69,8 @@
 						<li><a href="#" data-nav-section="services">Services</a></li>
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
+						<li><a href="#" data-nav-section="experience">Projects</a></li>
+						<li><a href="#" data-nav-section="work">algorithm Visualization</a></li>
 						<li><a href="#" data-nav-section="blog">Blog</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
 					</ul>
@@ -98,7 +98,7 @@
 			<section id="colorlib-hero" class="js-fullheight" data-section="home">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
-				   	<li style="background-image: url({% static 'website/images/img_bg_1.jpg '%});">
+				   	<li style="background-image: url({% static 'website/images/image_f.png'%});">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -113,7 +113,7 @@
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url({% static 'website/images/img_bg_2.jpg'%});">
+				   	<li style="background-image: url({% static 'website/images/image_f.png'%});">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -142,12 +142,18 @@
 										<span class="heading-meta">About Us</span>
 										<h2 class="colorlib-heading">Who Am I?</h2>
 										<p>
-											<strong>Hi I'm Papis Sahine Diallo</strong> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-										<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+											<strong>Hi I'm Papis Sahine Diallo</strong>
+											</p>
+										<p> I am a software engineer mainly focus on django and react in the development world.
+											I love to take care about the logic of the show it to the end user by using graphs, charts, or html pages.
+											With more than 2 years of experience in this field, I have been building applications and software to solve and make people lives easy.
+										</p>
+										<p>Having the ablility to transform requirements into useful softwares helps me tho prioritize tasks, iterate fast, 
+											and deliver faster. Take a look at my portfolio work and see if we can work together in your next projects.</p>
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							{% comment %} <div class="row">
 								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
 									<div class="services color-1">
 										<span class="icon2"><i class="icon-bulb"></i></span>
@@ -172,11 +178,11 @@
 										<h3>Application</h3>
 									</div>
 								</div>
-							</div>
+							</div> {% endcomment %}
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<div class="hire">
-										<h2>I am happy to know you <br>that 300+ projects done sucessfully!</h2>
+										<h2>I am happy to know you <br>that 30+ projects done sucessfully!</h2>
 										<a href="#" class="btn-hire">Hire me</a>
 									</div>
 								</div>
@@ -193,73 +199,84 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+							<h2 class="colorlib-heading">Here are my some of the Technology that I work with.</h2>
 						</div>
 					</div>
 					<div class="row row-pt-md">
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-1">
 								<span class="icon">
-									<i class="icon-bulb"></i>
+									<img src="{% static 'website/images/python.png' %}" alt="" style="height:50px;" />
+									{% comment %} <i class="icon-bulb"></i> {% endcomment %}
 								</span>
 								<div class="desc">
-									<h3>Innovative Ideas</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>Python</h3>
+									<p>Beyond the fact of using dajngo as my main framework in the the web work, I also use python 
+										to solve algorithmic issues and deepen my data structures.
+									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-2">
 								<span class="icon">
-									<i class="icon-data"></i>
+									<img src="{% static 'website/images/javascript.png' %}" alt="" style="height:50px;" />
 								</span>
 								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>Javascript</h3>
+									<p>for creating interactive pages and also make my html more dynamic and user friendly, I utilize javascirpt
+										to tackle this problem.
+									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-3">
 								<span class="icon">
-									<i class="icon-phone3"></i>
+									<img src="{% static 'website/images/django.png' %}" alt="" style="height:50px;" />
 								</span>
 								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>Django</h3>
+									<p>I use django on almost all of my projects the require building websites, application and and rest apis.
+										Check the examples in the projects section below. </p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-4">
 								<span class="icon">
-									<i class="icon-layers2"></i>
+									<img src="{% static 'website/images/react.png' %}" alt="" style="height:50px;" />
 								</span>
 								<div class="desc">
-									<h3>Graphic Design</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>React</h3>
+									<p>Working with apis is an essential task today, and using react makes it so
+										easy and fast in taping into endpoints and fetching data. </p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-5">
 								<span class="icon">
-									<i class="icon-data"></i>
+									<img src="{% static 'website/images/mysql.png' %}" alt="" style="height:50px;" />
 								</span>
 								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>MySql</h3>
+									<p>Database is really critical in development. I am well versed in sql from 
+										designing database relationships to filtering and querying results.
+									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 text-center animate-box">
 							<div class="services color-6">
 								<span class="icon">
-									<i class="icon-phone3"></i>
+									<img src="{% static 'website/images/bootstrap.png' %}" alt="" style="height:50px;" />
 								</span>
 								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+									<h3>Bootstrap</h3>
+									<p>The user experience, the layout and design is super important. I utilize bootstrap to 
+										bring attractivity and beauty to the representation of my pages.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -476,85 +493,112 @@
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+							<span class="heading-meta">My Projects</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="#">Full Stack Developer</a> <span>2017-2018</span></h2>
-					                  <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Front End Developer at Google Company</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">System Analyst</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Creative Designer</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url({% static 'website/images/img-1.jpg' %});">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url({% static 'website/images/img-2.jpg)' %};">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Animation</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url({% static 'website/images/img-3.jpg)' %};">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url({% static 'website/images/img-4.jpg' %});">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Application</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url({% static 'website/images/img-5.jpg' %});">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Graphic, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url({% static 'website/images/img-6.jpg' %});">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web Design</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -562,7 +606,7 @@
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
+							<span class="heading-meta">My Projects</span>
 							<h2 class="colorlib-heading animate-box">Recent Work</h2>
 						</div>
 					</div>
