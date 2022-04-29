@@ -503,24 +503,27 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url({% static 'website/images/saga_logo.jpg' %});">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Saga Sotftware</a></h3>
-										<span>Saga Software is a project management system that helps you manage your tasks, team members,
-											and due dates very easily. It is 
-										</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
+						{% for project in  projects%}
+							<div class="col-md-6 animate-box" data-animate-effect= {% if forloop.counter == 1 %}"fadeInLeft" {% elif forloop.counter == 2 %}"fadeInRight" {% elif forloop.counter == 3 %} "fadeInTop" {% else %} "fadeInBottom" {% endif %}>
+								<div class="project" style="background-image: url({% static 'website/images/saga_logo.jpg' %});">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="work.html">{{project.name}}</a></h3>
+											<span>{{project.overview}}</span>
+											<p class="icon">
+												<span><a href="{{project.github}}" target="_blank"><i class="icon-social-github-circular"></i>Github</a></span>
+												<span><a href="{% url 'details' pk=project.id %}"><i class="icon-eye"></i>Details</a></span>
+												{% if project.website %}
+												<span><a href="#"><i class="icon-heart"></i>Website</a></span>
+												{% endif %}
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+						{% endfor %}
+						
+						{% comment %} <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 							<div class="project" style="background-image: url({% static 'website/images/spide_logo.jpg)' %};">
 								<div class="desc">
 									<div class="con">
@@ -564,7 +567,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 						{% comment %} <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project" style="background-image: url({% static 'website/images/img-5.jpg' %});">
 								<div class="desc">
@@ -595,11 +598,6 @@
 								</div>
 							</div>
 						</div> {% endcomment %}
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
 					</div>
 				</div>
 			</section>
