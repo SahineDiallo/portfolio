@@ -4,7 +4,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Jackson Template</title>
+	<title>Papis Sahine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="Portfolio website personal website" />
@@ -66,11 +66,9 @@
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
 						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="services">Skills</a></li>
 						<li><a href="#" data-nav-section="experience">Projects</a></li>
-						<li><a href="#" data-nav-section="work">algorithm Visualization</a></li>
+						<li><a href="#" data-nav-section="work">Algorithm Visualization</a></li>
 						<li><a href="#" data-nav-section="blog">Blog</a></li>
 						<li><a href="#" data-nav-section="contact">Contact</a></li>
 					</ul>
@@ -310,7 +308,7 @@
 				</div>
 			</div>
 
-			<section class="colorlib-skills" data-section="skills">
+			{% comment %} <section class="colorlib-skills" data-section="skills">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -487,7 +485,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> {% endcomment %}
 
 			<section class="colorlib-experience" data-section="experience">
 				<div class="colorlib-narrow-content">
@@ -499,16 +497,20 @@
 					</div>
 					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+							<p class="work-menu"><span>
+								<a href="#" class="active">Latest Projects</a></span>
+							</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url({% static 'website/images/img-1.jpg' %});">
+							<div class="project" style="background-image: url({% static 'website/images/saga_logo.jpg' %});">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="work.html">Work 01</a></h3>
-										<span>Website</span>
+										<h3><a href="work.html">Saga Sotftware</a></h3>
+										<span>Saga Software is a project management system that helps you manage your tasks, team members,
+											and due dates very easily. It is 
+										</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
 											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
@@ -519,7 +521,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url({% static 'website/images/img-2.jpg)' %};">
+							<div class="project" style="background-image: url({% static 'website/images/spide_logo.jpg)' %};">
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 02</a></h3>
@@ -534,7 +536,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url({% static 'website/images/img-3.jpg)' %};">
+							<div class="project" style="background-image: url({% static 'website/images/sorting_vis.gif)' %};">
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 03</a></h3>
@@ -549,7 +551,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url({% static 'website/images/img-4.jpg' %});">
+							<div class="project" style="background-image: url({% static 'website/images/path_vis.png' %});">
 								<div class="desc">
 									<div class="con">
 										<h3><a href="work.html">Work 04</a></h3>
@@ -563,7 +565,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+						{% comment %} <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project" style="background-image: url({% static 'website/images/img-5.jpg' %});">
 								<div class="desc">
 									<div class="con">
@@ -592,7 +594,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 					</div>
 					<div class="row">
 						<div class="col-md-12 animate-box">
