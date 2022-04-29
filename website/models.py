@@ -2,7 +2,7 @@ from distutils.command.upload import upload
 from django.db import models
 
 class Files(models.Model):
-    image = models.ImageField(upload_to='project_images')
+    image = models.FileField(upload_to='project_images')
 
     def __str__(self):
         return self.image.name
