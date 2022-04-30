@@ -16,7 +16,7 @@ class Technology(models.Model):
 class Project(models.Model):
     name = models.CharField(max_length=100)
     overview = models.TextField()
-    thumbnail = models.ForeignKey(Files, on_delete=models.CASCADE, related_name='proj')
+    thumbnail = models.ImageField(upload_to="projects_thumb", blank=True, null=True)
     gallery = models.ManyToManyField(Files, related_name='projs')
     description = models.TextField()
     github = models.URLField()

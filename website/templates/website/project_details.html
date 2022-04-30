@@ -9,16 +9,6 @@
         <meta name="keywords" content="Portfolio website personal website" />
         <meta name="author" content="papis sahine diallo" />
     
-      <!-- Facebook and Twitter integration -->
-        <meta property="og:title" content=""/>
-        <meta property="og:image" content=""/>
-        <meta property="og:url" content=""/>
-        <meta property="og:site_name" content=""/>
-        <meta property="og:description" content=""/>
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:image" content="" />
-        <meta name="twitter:url" content="" />
-        <meta name="twitter:card" content="" />
     
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="favicon.ico">
@@ -52,9 +42,12 @@
     </head>
     <body>
         <div class="container" style="margin-top: 80px; padding-bottom: 80px;">
+            <div style="padding-left: 16px;margin-bottom: 20px;">
+                <a href="{% url 'index' %}" class="btn btn-primary">Back</a>
+            </div>
             <div class="d-flex justify-content-center">
                 <div class="col-md-4">
-                    <img src="{{project.thumbnail.image.url}}" alt="project thumbnail" style='width:100%'/>
+                    <img src="{{project.thumbnail.url}}" alt="project thumbnail" style='width:100%'/>
                 </div>
                 <div class="col-md-8">
                     <p>{{project.overview}}</p>

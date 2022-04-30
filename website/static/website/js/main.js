@@ -254,7 +254,7 @@
 				$("#sticky_item").trigger("sticky_kit:detach");
 				$("#sticky_item").trigger("sticky_kit:unstick");
 
-				$("#sticky_item").stick_in_parent();
+				//$("#sticky_item").stick_in_parent();
 			}
 			
 
@@ -264,7 +264,7 @@
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
+		//$("#sticky_item").stick_in_parent();
 
 	};
 
@@ -306,5 +306,25 @@
 		owlCrouselFeatureSlide();
 	});
 
+	
+	// var url = '/www.sahishblog.pythonanywhere.com/api/posts/'
+	// fetch(url)
+	// .then(resp=> resp.json())
+	// .then(data=> {
+	// 	console.log(data)
+	// })
+	// .catch(error=> {
+	// 	console.log(error)
+	// })
+
+	$("#contact_btn").on("click", (e)=>{
+		console.log('clicked')
+		e.preventDefault();
+		$("#contact_form")[0].reset();
+		$(".cnt_alt").fadeIn()
+		setTimeout(()=>{
+			$(".cnt_alt").fadeOut()
+		}, 3000)
+	})
 
 }());

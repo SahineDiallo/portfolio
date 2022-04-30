@@ -1432,3 +1432,6 @@ body.offcanvas {
     font-size: 13px;
     font-weight: 500;
 }
+.cnt_alt {
+  display:none;
+}
